@@ -3,7 +3,7 @@
 
 A RESTful API for managing books and borrowing records using **Express**, **TypeScript**, and **MongoDB with Mongoose**.
 
-API Live Link: [Library Management](#)
+API Live Link: [Library Management](https://library-management-system-server-a3.vercel.app/)
 
 ## 🚀 Features
 
@@ -199,7 +199,7 @@ You can use **Postman** or **Insomnia** with the following URLs:
 
 ## 📹 Video Demo
 
-🎥 [Attach your video link here before submission]
+🎥 [Video](https://drive.google.com/file/d/1Zbp2AVM6tIIqyVhRU2J7Etqp9ILmykYK/view?usp=sharing)
 
 ---
 
