@@ -13,6 +13,13 @@ bookRoutes.post('/', async (req: Request, res: Response) => {
       data: book
     });
   } catch (error: any) {
+    if (error.code === 11000 && error.keyPattern?.isbn) {
+      res.status(400).json({
+        success: false,
+        message: 'ISBN must be unique',
+      });
+    }
+
     res.status(400).json({
       success: false,
       message: 'Validation failed',

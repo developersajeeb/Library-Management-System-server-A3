@@ -1,4 +1,4 @@
-export type Genre = 'FICTION' | 'NON_FICTION' | 'SCIENCE' | 'HISTORY' | 'BIOGRAPHY' | 'FANTASY';
+export type Genre = 'FICTION' | 'NON FICTION' | 'SCIENCE' | 'HISTORY' | 'BIOGRAPHY' | 'FANTASY';
 
 export interface IBook extends Document {
   title: string;
