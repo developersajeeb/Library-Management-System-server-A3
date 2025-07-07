@@ -5,7 +5,10 @@ const cors = require("cors");
 const app: Application = express();
 
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://edushelf-nu.vercel.app']
+  origin: ['https://edushelf-nu.vercel.app', 'http://localhost:5173'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true
 }));
 app.use(express.json());
 
