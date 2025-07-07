@@ -14,6 +14,7 @@ const express_1 = require("express");
 const book_model_1 = require("../models/book.model");
 exports.bookRoutes = (0, express_1.Router)();
 exports.bookRoutes.post('/', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    var _a;
     try {
         const book = new book_model_1.Book(req.body);
         yield book.save();
@@ -24,6 +25,12 @@ exports.bookRoutes.post('/', (req, res) => __awaiter(void 0, void 0, void 0, fun
         });
     }
     catch (error) {
+        if (error.code === 11000 && ((_a = error.keyPattern) === null || _a === void 0 ? void 0 : _a.isbn)) {
+            res.status(400).json({
+                success: false,
+                message: 'ISBN must be unique',
+            });
+        }
         res.status(400).json({
             success: false,
             message: 'Validation failed',

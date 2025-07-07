@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/developersajeeb/Library-Management-System-server-A3#readme",
   "devDependencies": {
+    "@types/cors": "^2.8.19",
     "@types/express": "^5.0.3",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.8.3"
