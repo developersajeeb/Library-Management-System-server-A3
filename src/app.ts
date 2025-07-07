@@ -5,7 +5,7 @@ const cors = require("cors");
 const app: Application = express();
 
 app.use(cors({
-  origin: ['https://library-management-system-server-a3.vercel.app/api'],
+  origin: ['http://localhost:5173'],
 }));
 app.use(express.json());
 
