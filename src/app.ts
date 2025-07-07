@@ -5,8 +5,7 @@ const cors = require("cors");
 const app: Application = express();
 
 app.use(cors({
-  origin: '*',
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  origin: ["https://edushelf-nu.vercel.app","http://localhost:5173"]
 }));
 app.use(express.json());
 
